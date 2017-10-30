@@ -5,7 +5,7 @@ M0=[1 2 3 3 4 5 0.1 0.2 0.3];
 tspan=0:0.0001:20;
 [t,m]=ode45('lorenz',tspan,M0);
 
-%误差系统
+%the simulation of error system
 figure(1)
 plot(t,m(:,4)-h*m(:,1),'LineWidth',2);
 xlabel('t')
@@ -24,7 +24,7 @@ xlabel('t')
 ylabel('e_{3}(t)')
 hold on;
 
-%参数识别过程
+%the simulation of parameter adaptive
 figure(4)
 plot(t,m(:,7),'LineWidth',2);
 xlabel('t')
