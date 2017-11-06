@@ -1,5 +1,6 @@
 % we can set different values for the diagonal elements of the diagonal matrix in our comparative results 
-
+% in order to shorten the synchronization time and make the curves of chaotic synchronization smoother than 
+% the ones with other methods
 function dm=lorenz(t,m)
 a=10;
 b=28;
